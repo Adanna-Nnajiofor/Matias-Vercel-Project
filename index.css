@@ -488,7 +488,6 @@ header {
 }
 
 
-
 .vertical-side-right {
     display: none;
     flex-direction: column;
@@ -534,6 +533,7 @@ header {
     position: relative;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .hero-sec-A1 {
@@ -881,7 +881,7 @@ header {
 }
 
 .line {
-    flex-grow: 0.2;
+    flex-grow: 0.1;
     height: 1px;
     background-color: rgb(201, 243, 29);
     /* Adjust the color of the line as needed */
@@ -913,10 +913,16 @@ header {
 }
 
 .work-section-image-container {
+    width:100%;
     margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-section-image {
+    /* width: 100%; */
     margin: 30px;
 }
 
@@ -1439,6 +1445,8 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
