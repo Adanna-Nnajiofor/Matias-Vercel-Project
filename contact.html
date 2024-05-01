@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-menu" id="navMenu">
+                <img src="./assests/images/logo.png" alt="logo" class="nav-logo">
+                <!-- <h3>Matias</h3> -->
+                <div class="mainbar-content" id="mainBar-content">
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#work">WORK</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#testimonial">TESTIMONIAL</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- <button id="cancelBtn" style="display: none;">Cancel</button> -->
+                <div class="nav-button">
+                    <button>LET'S TALK <i class="fa-solid fa-arrow-right"></i></button>
+                    <i class="fa-solid fa-bars" id="mobile-bar" onclick="toggleMobileBarContent()"></i>
+                    <i class="fa-solid fa-xmark" id="closeBtn-mobile" onclick="toggleMobileBarContent()"
+                        style="display: none;"></i>
+                    <i class="fa-solid fa-bars" id="desktop-bar"></i>
+                </div>
+            </nav>
+            <div id="sidebar" class="sidebar">
+                <!-- Sidebar content here -->
+                <a href="#" id="closeBtn" class="close-btn">&times;</a>
+                <img src="./assests/images/logo.png" alt="logo" class="sidebar-logo">
+                <h3>Matias</h3>
+                <div class="side-bar-text-grey">
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem
+                        laboriosam,
+                        nisi ut aliquid ex ea autem velit esse quam nihil
+                    </p>
+                </div>
+                <div class="sidebar-contact">
+                    <h4 class="sidebar-subheading">ADDRESS</h4>
+                    <p class="sidebar-text-white">Victoria Street London,</p>
+                </div>
+                <div class="sidebar-contact">
+                    <h4 class="sidebar-subheading">EMAIL</h4>
+                    <p class="sidebar-text-white">Matias999@.Com</p>
+                </div>
+                <div class="sidebar-contact">
+                    <h4 class="sidebar-subheading">CALL NOW</h4>
+                    <p class="sidebar-text-white">+98 4758 2154 021</p>
+                </div>
+                <div class="sidebar-socials">
+                    <i class="fa-brands fa-facebook" id="social-btn"></i>
+                    <i class="fa-brands fa-twitter" id="social-btn"></i>
+                    <i class="fa-brands fa-linkedin" id="social-btn"></i>
+                    <i class="fa-brands fa-youtube" id="social-btn"></i>
+                </div>
+                <button>LET'S TALK <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div id="mobileBarContent" class="mobile-bar-content" style="display: none;">
+                <ul class="nav-mobile-links" id="navMobileLinks">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#testimonial">TESTIMONIAL</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="contact-page">
+            <div class="contact-page-1">
+                <h1>Let's Start Something</h1>
+                <p>Home / <span>Let's Start Something</span></p>
+            </div>
+            <div class="contact-page-2">
+                <div class="contact-page-2A">
+                    <h2>Leave A Reply</h2>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    <form action="/action_page.php">
+                        <!-- <label for="fname"> Name</label> -->
+                        <input type="text" id="fname" name="firstname" placeholder=" Name">
+
+                        <!-- <label for="lname">Email</label> -->
+                        <input type="text" id="email" name="Email" placeholder="Email">
+
+                        <!-- <label for="lname">Write Comments</label> -->
+                        <input type="text" id="comments" name="comments" placeholder="Write Comments">
+
+                        <button class="contact-page-btn"> Submit Comment<i class="fa-solid fa-arrow-right" id="comment-arrow"></i></button>
+                    </form>
+                </div>
+                <div class="contact-page-2B">
+                    <h2>Feel Free To Contact Me Anytime</h2>
+                    <div class="contact-page-2B-box">
+                        <p>Email</p>
+                        <h3>Davidmatias333@.Com</h3>
+                    </div>
+                    <div class="contact-page-2B-box">
+                        <p>Phone</p>
+                        <h3>+(2) 871 382 023</h3>
+                    </div>
+                    <div class="contact-page-2B-box">
+                        <p>Address</p>
+                        <h3>Victoria Street London</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-in-touch animate-from-bottom" id="contact">
+            <div class="get-in-touch-1">
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div class="get-in-touch-2">
+                <div class="get-in-touch-2A">
+                    <p>Hello, I’m David Matias, Website & User Interface Designer based in London.</p>
+                    <a href="">Davidmatias333@.Com</a>
+                </div>
+                <div clas="=get-in-touch-2B">
+                    <div class="get-in-touch-2B-1">
+                        <div class="get-in-touch-2B-box">
+                            <p>Facebook</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                        <div class="get-in-touch-2B-box">
+                            <p>Twitter</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="get-in-touch-2B-2">
+                        <div class="get-in-touch-2B-box">
+                            <p>Linkdin</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                        <div class="get-in-touch-2B-box">
+                            <p>Webflow</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="footer">
+                <div class="footer-1">
+                    <p>Copyright © 2023 <span>Matias.</span> All rights reserved.</p>
+                </div>
+                <div class="footer-2">
+                    <p>Terms & Condition</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="footer-3">
+                    <button><i class="fa-solid fa-arrow-up" id="footer-arrow"></i></button>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

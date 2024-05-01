@@ -31,11 +31,11 @@ window.addEventListener('resize', function () {
 
 
 // for the let's talk button on the nav
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const scrollToHero = document.querySelector('.nav-button button');
     const heroSection = document.querySelector('.hero-section');
 
-    scrollToHero.addEventListener('click', function() {
+    scrollToHero.addEventListener('click', function () {
         heroSection.scrollIntoView({ behavior: 'smooth' });
     });
 });
@@ -443,8 +443,8 @@ observer.observe(workProcessSection);
 
 
 // Animation for the Testimonial section
-document.addEventListener("DOMContentLoaded", function() {
-    window.addEventListener("scroll", function() {
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
         let lineWithText = document.querySelector(".line-with-text");
         let testimonialHeader = document.querySelector(".testimonial h1");
         let testimonialContent = document.querySelector(".testimonial-1");
@@ -527,8 +527,8 @@ function prevImage() {
 
 
 // Animation for the blog section
-document.addEventListener("DOMContentLoaded", function() {
-    window.addEventListener("scroll", function() {
+document.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("scroll", function () {
         let myBlog1 = document.querySelector(".my-blog-1");
         let myBlog2As = document.querySelectorAll(".my-blog-2A");
 
@@ -560,13 +560,13 @@ function isElementInViewport(el, offset) {
 
 
 // for the get in touch section socials buttons
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Get all elements with class get-in-touch-2B-box
     const getInTouchBoxes = document.querySelectorAll('.get-in-touch-2B-box');
 
     // Add event listener to each get-in-touch-2B-box
     getInTouchBoxes.forEach(box => {
-        box.addEventListener('click', function() {
+        box.addEventListener('click', function () {
             // Scroll to the hero section smoothly
             document.querySelector('.hero-section').scrollIntoView({
                 behavior: 'smooth'
@@ -597,10 +597,10 @@ window.addEventListener('scroll', handleScroll);
 const footerButton = document.querySelector('.footer-3 button');
 
 // Function to handle click event on the footer button
-footerButton.addEventListener('click', function() {
+footerButton.addEventListener('click', function () {
     // Get the offset top of the hero-section-A
     const heroSectionATop = document.querySelector('.hero-section-A').offsetTop;
-    
+
     // Scroll to the hero-section-A
     window.scrollTo({
         top: heroSectionATop,
@@ -634,3 +634,21 @@ window.addEventListener('scroll', animateGetInTouchSection);
 
 // Trigger animation when the page loads
 animateGetInTouchSection();
+
+
+
+// Function to add smooth scrolling behavior
+function smoothScroll(target) {
+    document.querySelector(target).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
+// Add event listeners to each link
+document.querySelectorAll('.nav-mobile-links a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        const target = this.getAttribute('href'); // Get the target ID from href attribute
+        smoothScroll(target); // Call smoothScroll function with target ID
+    });
+});
