@@ -689,4 +689,86 @@ document.addEventListener("scroll", function() {
 });
 
 
+// for the Blog link
+// This part is only needed if you want to use JavaScript to create the hover effect
+document.addEventListener("DOMContentLoaded", function() {
+    var blogDropdown = document.querySelector(".blog-link");
+    var blogDropdownContent = document.querySelector(".tooltip");
+    
+    blogDropdown.addEventListener("mouseenter", function() {
+        blogDropdownContent.style.display = "block";
+    });
+
+    blogDropdown.addEventListener("mouseleave", function() {
+        blogDropdownContent.style.display = "none";
+    });
+});
+
+
+// For the Services link
+// This part is only needed if you want to use JavaScript to create the hover effect
+document.addEventListener("DOMContentLoaded", function() {
+    var blogDropdown = document.querySelector(".service-link");
+    var blogDropdownContent = document.querySelector(".tooltip");
+    
+    blogDropdown.addEventListener("mouseenter", function() {
+        blogDropdownContent.style.display = "block";
+    });
+
+    blogDropdown.addEventListener("mouseleave", function() {
+        blogDropdownContent.style.display = "none";
+    });
+});
+
+
+
+// Get the "Blog Details" link
+var blogDetailsLink = document.getElementById("blogDetailsLink");
+
+// Add a click event listener to the "Blog Details" link
+blogDetailsLink.addEventListener("click", function(event) {
+    // Prevent the default behavior of the link (i.e., navigating to "#")
+    event.preventDefault();
+    
+    // Get the href attribute value of the "Blog Details" link
+    var href = this.getAttribute("href");
+    
+    // Redirect the user to the blog-details.html page
+    window.location.href = href;
+});
+
+
+
+// For the Contact Link
+document.addEventListener("DOMContentLoaded", function() {
+    var contactLink = document.querySelector(".contact");
+
+    if (contactLink) {
+        contactLink.addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+            window.location.href = "contact.html"; // Navigate to contact.html
+        });
+    }
+});
+
+
+
+
+
+// To get to the nav links section
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            // Get the target section ID from the href attribute
+            const targetId = this.getAttribute('href').slice(1);
+
+            // Scroll to the target section in the index.html file
+            window.location.href = `index.html#${targetId}`;
+        });
+    });
+});
 

@@ -17,12 +17,22 @@
                 <!-- <h3>Matias</h3> -->
                 <div class="mainbar-content" id="mainBar-content">
                     <ul class="nav-links" id="navLinks">
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#about">ABOUT</a></li>
-                        <li><a href="#work">WORK</a></li>
-                        <li><a href="#services">SERVICES</a></li>
-                        <li><a href="#testimonial">TESTIMONIAL</a></li>
-                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="index.html#home">HOME</a></li>
+                        <li><a href="index.html#about">ABOUT</a></li>
+                        <li><a href="index.html#work">WORK</a></li>
+                        <li class="service-link"><a href="index.html#services">SERVICES</a>
+                            <div class="tooltip">
+                                <a href="service.html">Service</a>
+                                <a href="service-details.html">Service Details</a>
+                            </div>
+                        </li>
+                        <li><a href="index.html#testimonial">TESTIMONIAL</a></li>
+                        <li class="blog-link"><a href="index.html#blog">BLOG</a>
+                            <div class="tooltip">
+                                <a href="blog.html">Blog</a>
+                                <a href="blog-details.html" id="blogDetailsLink">Blog Details</a>
+                            </div>
+                        </li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
@@ -70,18 +80,28 @@
 
             <div id="mobileBarContent" class="mobile-bar-content" style="display: none;">
                 <ul class="nav-mobile-links" id="navMobileLinks">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#services">SERVICES</a></li>
-                    <li><a href="#testimonial">TESTIMONIAL</a></li>
-                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#work">WORK</a></li>
+                    <li class="service-link"><a href="index.html#services">SERVICES</a>
+                        <div class="tooltip">
+                            <a href="service.html">Service</a>
+                            <a href="service-details.html">Service Details</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#testimonial">TESTIMONIAL</a></li>
+                    <li class="blog-link"><a href="index.html#blog">BLOG</a>
+                        <div class="tooltip">
+                            <a href="blog.html">Blog</a>
+                            <a href="blog-details.html" id="blogDetailsLink">Blog Details</a>
+                        </div>
+                    </li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </header>
 
-        <section class="contact-page">
+        <section class="contact-page" id="contact">
             <div class="contact-page-1">
                 <h1>Let's Start Something</h1>
                 <p>Home / <span>Let's Start Something</span></p>
