@@ -652,3 +652,41 @@ document.querySelectorAll('.nav-mobile-links a').forEach(anchor => {
         smoothScroll(target); // Call smoothScroll function with target ID
     });
 });
+
+
+
+
+// for the blog.html 
+document.addEventListener("scroll", function() {
+    var blogSection = document.getElementById("blog");
+    var blogPosition = blogSection.getBoundingClientRect().top;
+
+    var blogHeader = document.querySelector(".blog-page-2 h4");
+    var blogText = document.querySelector(".blog-page-2 .blog-2A-text");
+    var blogHr = document.querySelector(".blog-page-2 hr");
+
+    var windowHeight = window.innerHeight;
+
+    if (blogPosition < windowHeight * 0.75) {
+        blogHeader.classList.add("animate-up");
+        blogHr.classList.add("animate-up");
+        blogText.classList.add("animate-up");
+    } else {
+        blogHeader.classList.remove("animate-up");
+        blogHr.classList.remove("animate-up");
+        blogText.classList.remove("animate-up");
+    }
+
+    if (blogPosition < windowHeight * 0.5) {
+        blogHeader.classList.add("animate-down");
+        blogHr.classList.add("animate-down");
+        blogText.classList.add("animate-down");
+    } else {
+        blogHeader.classList.remove("animate-down");
+        blogHr.classList.remove("animate-down");
+        blogText.classList.remove("animate-down");
+    }
+});
+
+
+

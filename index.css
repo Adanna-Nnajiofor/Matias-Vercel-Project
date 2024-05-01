@@ -2268,7 +2268,7 @@ select {
     justify-content: space-between;
     /* padding: 20px; */
     /* align-items: center; */
-    width:100%;
+    width: 100%;
     gap: 30px;
 
 }
@@ -2280,12 +2280,13 @@ select {
     background-color: rgb(20, 20, 16);
     border-radius: 20px;
     padding: 10px;
+    position: relative;
 }
+
 
 .blog-page-2A-image {
     width: 100%;
 }
-
 
 .blog-page-3 {
     display: flex;
@@ -2295,6 +2296,12 @@ select {
     border-radius: 10px;
     padding: 20px;
     border: 2px solid rgba(255, 255, 255, 0.1);
+   
+}
+
+.blog-page-2,
+.blog-page-3 {
+    height: 100%; 
 }
 
 .blog-2A-list {
@@ -2302,10 +2309,10 @@ select {
     margin: 20px 0px;
 }
 
-.blog-2A-list li{
-    color:grey;
+.blog-2A-list li {
+    color: grey;
     line-height: 40px;
-    padding:0px 20px;
+    padding: 0px 20px;
 }
 
 .blog-2A-list li::marker {
@@ -2327,41 +2334,41 @@ select {
     padding: 30px 0px;
 }
 
-.blog-2A-1{
+.blog-2A-1 {
     background-color: rgb(201, 243, 29);
     padding: 30px;
     border-radius: 10px;
-    margin:10px 0px;
+    margin: 10px 0px;
 }
 
-.blog-2A-1 p{
-padding: 10px 0px;
+.blog-2A-1 p {
+    padding: 10px 0px;
 }
 
-.blog-2A-1 p span{
- padding: 5px 0;
- text-decoration: underline;
+.blog-2A-1 p span {
+    padding: 5px 0;
+    text-decoration: underline;
 }
 
-.blog-2A-1 p{
+.blog-2A-1 p {
     color: black;
 }
 
-hr{
-    border:1px solid rgba(255, 255, 255, 0.077);
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.077);
 }
 
-.blog-2A-2{
+.blog-2A-2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgb(23, 21, 22) ;
+    background-color: rgb(23, 21, 22);
     border-radius: 10px;
     margin: 60px 0px;
     padding: 10px 20px;
 }
 
-.blog-2A-2-posted{
+.blog-2A-2-posted {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -2370,49 +2377,49 @@ hr{
     align-items: center;
 }
 
-.blog-2A-2-social{
+.blog-2A-2-social {
     display: flex;
     flex-direction: row;
     gap: 20px;
     text-align: center;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.blog-2A-2-box{
+.blog-2A-2-box {
     padding: 20px;
-    background-color: rgb(29, 29, 29) ;
+    background-color: rgb(29, 29, 29);
     text-align: center;
-    color:grey;
+    color: grey;
     border-radius: 5px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    top:100px;
+    top: 100px;
     cursor: pointer;
 
 }
 
-.blog-2A-2-box-1{
+.blog-2A-2-box-1 {
     padding: 20px;
-    background-color: rgb(29, 29, 29) ;
+    background-color: rgb(29, 29, 29);
     text-align: center;
-    color:white;
+    color: white;
     border-radius: 5px;
     height: 50px;
     display: flex;
-    gap:20px;
+    gap: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#blog-social:hover{
+#blog-social:hover {
     color: rgb(201, 243, 29);
 }
 
-.blog-page-3B-box{
+.blog-page-3B-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2420,40 +2427,40 @@ hr{
     color: grey;
 }
 
-.blog-page-3B-box button{
- padding:5px 10px;
- border-radius: 5px;
- background-color: rgb(201, 243, 29);
- cursor: pointer;
- border: none;
+.blog-page-3B-box button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(201, 243, 29);
+    cursor: pointer;
+    border: none;
 }
 
-.blog-page-3B-box button:hover{
-background-color: white;
+.blog-page-3B-box button:hover {
+    background-color: white;
 }
 
-.blog-page-3C-box{
+.blog-page-3C-box {
     display: flex;
     flex-direction: row;
     margin: 30px 0px;
-    gap:20px;
+    gap: 20px;
 }
 
-.blog-page-3C-box img{
-width:fit-content;
+.blog-page-3C-box img {
+    width: fit-content;
 }
 
-.blog-page-3C-box-text p span{
+.blog-page-3C-box-text p span {
     color: rgb(201, 243, 29);
     padding: 30px 0px;
 }
 
-.blog-page-3D{
+.blog-page-3D {
     margin: 30px 0px;
-    color:grey;
+    color: grey;
 }
 
-.blog-page-3D-btn{
+.blog-page-3D-btn {
     padding: 10px 20px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px;
@@ -2461,24 +2468,24 @@ width:fit-content;
     text-align: center;
 }
 
-.blog-page-3D-btn:hover{
-    background-color:rgb(201, 243, 29) ;
+.blog-page-3D-btn:hover {
+    background-color: rgb(201, 243, 29);
     color: black;
 }
 
-.blog-page-3D-1{
+.blog-page-3D-1 {
     display: flex;
     flex-direction: row;
-    margin:10px 0px;
-    gap:10px;
+    margin: 10px 0px;
+    gap: 10px;
 }
 
-.blog-page-3 h2{
-    padding:20px 0px;
-    color:white;
+.blog-page-3 h2 {
+    padding: 20px 0px;
+    color: white;
 }
 
-.blog-page-3A{
+.blog-page-3A {
     margin: 20px 0px;
     /* padding: 10px 20px; */
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -2487,18 +2494,48 @@ width:fit-content;
     display: flex;
 }
 
-.blog-page-3A button{
-background-color: rgb(201, 243, 29) ;
-padding: 25px;
-border-radius: 0px 5px 5px 0px;
-cursor: pointer;
+.blog-page-3A button {
+    background-color: rgb(201, 243, 29);
+    padding: 25px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
 }
 
-.blog-page-3A input{
-width:100%;
-background-color: transparent;
-border: none;
-padding:20px;
+.blog-page-3A input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 20px;
+}
+
+.animate-up {
+    animation: moveUp 3s forwards;
+}
+
+.animate-down {
+    animation: moveDown 3s forwards;
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(50px);
+        opacity: 0;
+    }
 }
 
 
@@ -2897,6 +2934,7 @@ padding:20px;
     .blog-page-1 {
         display: flex;
         flex-direction: row;
+
     }
 
     .blog-page-2 {
@@ -2907,9 +2945,13 @@ padding:20px;
     .blog-page-3 {
         display: flex;
         flex-direction: column;
+        position: sticky;
+        top: 0;
+        bottom: 0;
+       
     }
 
-    .blog-2A-2{
+    .blog-2A-2 {
         display: flex;
         flex-direction: row;
     }
