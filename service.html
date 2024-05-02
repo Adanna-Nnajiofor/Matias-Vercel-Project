@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-menu" id="navMenu">
+                <img src="./assests/images/logo.png" alt="logo" class="nav-logo">
+                <!-- <h3>Matias</h3> -->
+                <div class="mainbar-content" id="mainBar-content">
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html#home">HOME</a></li>
+                        <li><a href="index.html#about">ABOUT</a></li>
+                        <li><a href="index.html#work">WORK</a></li>
+                        <li class="service-link"><a href="index.html#services">SERVICES</a>
+                            <div class="tooltip">
+                                <a href="service.html" id="serviceLink">Service</a>
+                                <a href="service-details.html" id="serviceDetailsLink">Service Details</a>
+                            </div>
+                        </li>
+                        <li><a href="index.html#testimonial">TESTIMONIAL</a></li>
+                        <li class="blog-link"><a href="index.html#blog">BLOG</a>
+                            <div class="tooltip">
+                                <a href="blog.html" id="blogLink">Blog</a>
+                                <a href="blog-details.html" id="blogDetailsLink">Blog Details</a>
+                            </div>
+                        </li>
+                        <li><a href="#contact" class="contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- <button id="cancelBtn" style="display: none;">Cancel</button> -->
+                <div class="nav-button">
+                    <button>LET'S TALK <i class="fa-solid fa-arrow-right"></i></button>
+                    <i class="fa-solid fa-bars" id="mobile-bar" onclick="toggleMobileBarContent()"></i>
+                    <i class="fa-solid fa-xmark" id="closeBtn-mobile" onclick="toggleMobileBarContent()"
+                        style="display: none;"></i>
+                    <i class="fa-solid fa-bars" id="desktop-bar"></i>
+                </div>
+            </nav>
+            <div id="sidebar" class="sidebar">
+                <!-- Sidebar content here -->
+                <a href="#" id="closeBtn" class="close-btn">&times;</a>
+                <img src="./assests/images/logo.png" alt="logo" class="sidebar-logo">
+                <h3>Matias</h3>
+                <div class="side-bar-text-grey">
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                        consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem
+                        laboriosam,
+                        nisi ut aliquid ex ea autem velit esse quam nihil
+                    </p>
+                </div>
+                <div class="sidebar-contact">
+                    <h4 class="sidebar-subheading">ADDRESS</h4>
+                    <p class="sidebar-text-white">Victoria Street London,</p>
+                </div>
+                <div class="sidebar-contact">
+                    <h4 class="sidebar-subheading">EMAIL</h4>
+                    <p class="sidebar-text-white">Matias999@.Com</p>
+                </div>
+                <div class="sidebar-contact">
+                    <h4 class="sidebar-subheading">CALL NOW</h4>
+                    <p class="sidebar-text-white">+98 4758 2154 021</p>
+                </div>
+                <div class="sidebar-socials">
+                    <i class="fa-brands fa-facebook" id="social-btn"></i>
+                    <i class="fa-brands fa-twitter" id="social-btn"></i>
+                    <i class="fa-brands fa-linkedin" id="social-btn"></i>
+                    <i class="fa-brands fa-youtube" id="social-btn"></i>
+                </div>
+                <button>LET'S TALK <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+
+            <div id="mobileBarContent" class="mobile-bar-content" style="display: none;">
+                <ul class="nav-mobile-links" id="navMobileLinks">
+                    <li><a href="index.html#home">HOME</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="index.html#work">WORK</a></li>
+                    <li class="service-link"><a href="index.html#services">SERVICES</a>
+                        <div class="tooltip">
+                            <a href="service.html" id="serviceLink">Service</a>
+                            <a href="service-details.html" id="serviceDetailsLink">Service Details</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html#testimonial">TESTIMONIAL</a></li>
+                    <li class="blog-link"><a href="index.html#blog">BLOG</a>
+                        <div class="tooltip">
+                            <a href="blog.html" id="blogLink">Blog</a>
+                            <a href="blog-details.html" id="blogDetailsLink">Blog Details</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact" class="contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section class="service-page">
+            <div class="contact-page-1">
+                <h1>Services All</h1>
+                <p>Home / <span>Services All</span></p>
+            </div>
+            <ol class="service-tabular-list">
+                <li class="animate-from-bottom">
+                    <span>01</span>
+                    <span>
+                        <h4>Designer</h4>
+                        <h2>Illustration Design</h2>
+                    </span>
+                    <span class="service-grey-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat
+                        nulla pariatur. sunt in culpa qui officia deserunt mollit</span>
+                    <span>
+                        <div class="service-arrow-box"><i class="fas fa-arrow-up arrow-top-right"
+                                id="service-arrow-up"></i>
+                        </div>
+                    </span>
+                </li>
+                <li class="animate-from-bottom">
+                    <span>02</span>
+                    <span>
+                        <h4>Branding</h4>
+                        <h2>Business Branding</h2>
+                    </span>
+                    <span class="service-grey-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat
+                        nulla pariatur. sunt in culpa qui officia deserunt mollit</span>
+                    <span>
+                        <div class="service-arrow-box"><i class="fas fa-arrow-up arrow-top-right"
+                                id="service-arrow-up"></i>
+                        </div>
+                    </span>
+                </li>
+                <li class="animate-from-bottom">
+                    <span>03</span>
+                    <span>
+                        <h4>UI/UX Design</h4>
+                        <h2>Web UI/UX Design</h2>
+                    </span>
+                    <span class="service-grey-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat
+                        nulla pariatur. sunt in culpa qui officia deserunt mollit</span>
+                    <span>
+                        <div class="service-arrow-box"><i class="fas fa-arrow-up arrow-top-right"
+                                id="service-arrow-up"></i>
+                        </div>
+                    </span>
+                </li>
+            </ol>
+            <div class="need-project service-page-1" id="projectSection">
+                <div class="need-project-text">
+                    <div class="need-project-text-1 animate-from-top">
+                        <div class="need-project-subtext-1a">
+                            <p>Need a Project?</p>
+                        </div>
+                        <div class="need-project-subtext-1b">
+                            <h1>Let's Work Together. <br> Fixed A Meeting</h1>
+                        </div>
+                    </div>
+                    <div class="need-project-text-2 animate-from-bottom">
+                        <div class="need-project-subtext-2a">
+                            <i class="fa-regular fa-envelope" id="need-project-socials"></i>
+                            <p> <span>Email </span><br> davidmatias3</p>
+                        </div>
+                        <div class="need-project-subtext-2b">
+                            <i class="fa-solid fa-location-dot" id="need-project-socials"></i>
+                            <p> <span>Location</span> <br> Victoria Street London, England</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="need-project-image animate-from-right">
+                    <img src="./assests/images/project-need.png" alt="man sitting down pressing laptop">
+                </div>
+            </div>
+
+            <div class="service-page-2">
+                <div class="line-with-text">
+                    <div class="line"></div>
+                    <div class="text">Choose Your Plan</div>
+                    <div class="line"></div>
+                </div>
+                <h1>The Best Pricing Plans To Get Your Best</h1>
+                <div class="service-page-2A">
+                    <div class="service-page-2A-box service-black-box">
+                        <div class="service-black-box-image"><img src="./assests/images/basic.png" alt="basic"></div>
+                        <h3>Basic Plan</h3>
+                        <p class="service-page-caps"><span>$35</span>/per month</p>
+                        <hr>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Mobile Development</li>
+                            <li>Advetising</li>
+                            <li>Advetising</li>
+                            <li>Graphic design</li>
+                            <li>Project management</li>
+                        </ul>
+                        <button>Start My Project Now <i class="fa-solid fa-arrow-right" id="service-page-arrow"></i>
+                        </button>
+                    </div>
+                    <div class="service-page-2A-box service-yellow-box">
+                        <div class="service-yellow-box-image"><img src="./assests/images/warranty.png" alt="warranty">
+                        </div>
+                        <h3>Ultra Plan</h3>
+                        <p class="service-page-caps"><span>$65</span>/per month</p>
+                        <hr>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Mobile Development</li>
+                            <li>Advetising</li>
+                            <li>Advetising</li>
+                            <li>Graphic design</li>
+                            <li>Project management</li>
+                        </ul>
+                        <button>Start My Project Now <i class="fa-solid fa-arrow-right" id="service-page-arrow"></i>
+                        </button>
+                    </div>
+                    <div class="service-page-2A-box service-black-box">
+                        <div class="service-black-box-image"><img src="./assests/images/premium-quality.png"
+                                alt="premium-quality">
+                        </div>
+                        <h3>Gold Plan</h3>
+                        <p class="service-page-caps"><span>$95</span>/per month</p>
+                        <hr>
+                        <ul>
+                            <li>Web Development</li>
+                            <li>Mobile Development</li>
+                            <li>Advetising</li>
+                            <li>Advetising</li>
+                            <li>Graphic design</li>
+                            <li>Project management</li>
+                        </ul>
+                        <button>Start My Project Now <i class="fa-solid fa-arrow-right" id="service-page-arrow"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-process" id="work-process">
+                <div class="line-with-text">
+                    <div class="line"></div>
+                    <div class="text">Working Process</div>
+                    <div class="line"></div>
+                </div>
+                <h1>Your Dream Website In Just Few Steps</h1>
+                <div class="work-process-1">
+                    <div class="work-process-1a">
+                        <h2>Concept</h2>
+                        <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+                        <ul>
+                            <li>Reviewing any existing branding</li>
+                            <li>Target audience and competitors research</li>
+                            <li>Developing a strategy</li>
+                        </ul>
+                        <div class="work-process-circle"></div>
+                    </div>
+                    <div class="work-process-1a">
+                        <h2>Design</h2>
+                        <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+                        <ul>
+                            <li>Developing wireframes and mockup</li>
+                            <li>Choosing typography, color palettes,</li>
+                            <li>Refining the design</li>
+                        </ul>
+                        <div class="work-process-circle"></div>
+                    </div>
+                    <div class="work-process-1a">
+                        <h2>Webflow</h2>
+                        <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
+                        <ul>
+                            <li>Testing the website thoroughly launch</li>
+                            <li>Choosing typography, color palettes,</li>
+                            <li>Refining the design</li>
+                        </ul>
+                        <div class="work-process-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-in-touch animate-from-bottom" id="contact">
+            <div class="get-in-touch-1">
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div class="get-in-touch-2">
+                <div class="get-in-touch-2A">
+                    <p>Hello, I’m David Matias, Website & User Interface Designer based in London.</p>
+                    <a href="">Davidmatias333@.Com</a>
+                </div>
+                <div clas="=get-in-touch-2B">
+                    <div class="get-in-touch-2B-1">
+                        <div class="get-in-touch-2B-box">
+                            <p>Facebook</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                        <div class="get-in-touch-2B-box">
+                            <p>Twitter</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="get-in-touch-2B-2">
+                        <div class="get-in-touch-2B-box">
+                            <p>Linkdin</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                        <div class="get-in-touch-2B-box">
+                            <p>Webflow</p>
+                            <i class="fa-solid fa-arrow-right" id="touch-arrow"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <section class="footer">
+                <div class="footer-1">
+                    <p>Copyright © 2023 <span>Matias.</span> All rights reserved.</p>
+                </div>
+                <div class="footer-2">
+                    <p>Terms & Condition</p>
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="footer-3">
+                    <button><i class="fa-solid fa-arrow-up" id="footer-arrow"></i></button>
+                </div>
+            </section>
+        </footer>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
