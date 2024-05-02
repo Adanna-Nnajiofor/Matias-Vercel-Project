@@ -554,7 +554,9 @@ header {
     background-color: rgb(201, 243, 29);
     padding: 20px;
     width: 100%;
+
 }
+
 
 .marquee-1-image:not(:last-child) {
     margin-right: 50px;
