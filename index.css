@@ -2288,7 +2288,7 @@ select {
 
 
 
-/* CSS Styling for Blog Page */
+/* CSS Styling for Blog Details Page */
 .blog-page {
     display: flex;
     flex-direction: column;
@@ -2577,6 +2577,68 @@ hr {
 
 
 
+/* CSS Styling for Blog Page */
+.blog-subpage-1{
+    background-color: rgb(20, 20, 16);
+    border-radius: 0px 10px 0px 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    border: 2px solid rgb(20, 20, 16);
+    top:-80px;
+    position: relative;
+    padding: 30px 30px 120px 30px;
+}
+
+.blog-subpage-1B{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.blog-subpage-1A h2{
+    padding: 20px 0px;
+}
+
+.blog-subpage-1A h4{
+    padding: 0px;
+}
+
+.blog-subpage-1A p{
+    padding: 20px 0px;
+}
+
+.blog-subpage-1 button{
+    /* width:20%; */
+    padding: 20px 40px;
+    background-color: rgb(201, 243, 29);
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+.blog-subpage-1C{
+    background-color: rgb(23, 24, 25);
+    padding:30px;
+    display: flex;
+    gap:15px;
+    border-radius: 10px;
+}
+
+.blog-subpage-1C button{
+    padding:20px;
+    background-color: rgb(201, 243, 29);
+    border-radius: 10px;
+    border: none;
+}
 
 
 

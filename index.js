@@ -738,6 +738,22 @@ blogDetailsLink.addEventListener("click", function(event) {
 });
 
 
+// Get the "Blog" link
+var blogDetailsLink = document.getElementById("blogLink");
+
+// Add a click event listener to the "Blog Details" link
+blogDetailsLink.addEventListener("click", function(event) {
+    // Prevent the default behavior of the link (i.e., navigating to "#")
+    event.preventDefault();
+    
+    // Get the href attribute value of the "Blog Details" link
+    var href = this.getAttribute("href");
+    
+    // Redirect the user to the blog-details.html page
+    window.location.href = href;
+});
+
+
 
 // For the Contact Link
 document.addEventListener("DOMContentLoaded", function() {
